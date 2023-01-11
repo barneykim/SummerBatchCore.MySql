@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>SummerBatchCore.Support.MySql</PackageId>
+    <Title>Summer Batch Core for MySQL</Title>
+    <Version>0.0.1</Version>
+    <Authors>Barney Kim</Authors>
+    <Company>XLGAMES, Inc.</Company>
+	<PackageProjectUrl>https://github.com/barneykim/SummerBatchCore.MySql</PackageProjectUrl>
+    <PackageTags>batch; mysql</PackageTags>
+    <Product>Summer Batch Core for MySQL</Product>
+    <AssemblyName>SummerBatchCore.Support.MySql</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SummerBatchCore" Version="3.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="SqlScripts/MySql-creation.sql">
+      <Pack>true</Pack>
+      <PackagePath>\SqlScripts\</PackagePath>
+    </Content>
+    <Content Include="SqlScripts/MySql-drop.sql">
+      <Pack>true</Pack>
+      <PackagePath>\SqlScripts\</PackagePath>
+    </Content>
+  </ItemGroup>
+
+</Project>
